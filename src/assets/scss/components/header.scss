@@ -1,0 +1,70 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.header__row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 1.9rem 0 3.1rem;
+}
+.header__links{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+.logo__imgs{
+background-size: cover;
+}
+
+
+
+.link-header{
+   font-family: $body-font;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 1.4rem;
+   line-height: 2rem;
+   color: $c-text;
+   margin-left: 5rem;
+   border: 2px solid transparent;
+   padding: 1rem;
+
+   &:hover{
+      
+      color:$c-text;
+      border: 2px solid $c-primary;
+      background:$c-secondary;
+      border-radius: 6px; 
+      padding: 1rem;  
+   }
+}
+.invers{
+   background: #43806C;
+   border-radius: 6px;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 1.4rem;
+   line-height: 20px;
+   color: #FFFFFF;
+   padding: 1rem 1.4rem;
+   border: 2px solid transparent;
+
+   &:hover{
+      
+      color:$c-text;
+      border: 2px solid $c-primary;
+      background:$c-secondary;   
+   }
+}
+
+// 767px;
+@media screen and (max-width: $sm){
+   
+   .link-header{
+      font-size: 1.1rem;
+   }
+
+}
